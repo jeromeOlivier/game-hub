@@ -1,10 +1,11 @@
 import platforms from "../data/platforms";
 
-interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
+//todo: unused interface. delete?
+// interface Platform {
+//   id: number;
+//   name: string;
+//   slug: string;
+// }
 
 const usePlatforms = () => ({ data: platforms, isLoading: false, error: null });
 

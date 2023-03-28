@@ -5,8 +5,7 @@ import {
   List,
   ListItem,
   Image,
-  Text,
-  Spinner,
+  // Spinner,
   Button,
   Heading,
 } from "@chakra-ui/react";
@@ -18,9 +17,9 @@ interface Props {
 }
 
 const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
-  const { data, isLoading, error } = useGenres();
+  const { data /*isLoading, error*/ } = useGenres();
 
-  // Since genres data is currently static, following two lines are commented out
+  //todo: Since genres data is currently static, following two lines are commented out
   // if (error) return null;
   // if (isLoading) return <Spinner />;
   return (
