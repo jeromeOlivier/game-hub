@@ -1,12 +1,4 @@
-import {
-  Box,
-  HStack,
-  Icon,
-  IconButton,
-  Switch,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, IconButton, useColorMode } from "@chakra-ui/react";
 import { BsSun, BsMoon } from "react-icons/bs";
 
 const ColorModeSwitch = () => {
@@ -17,17 +9,21 @@ const ColorModeSwitch = () => {
         <IconButton
           aria-label="dark"
           bg="transparent"
-          fontSize="20px"
+          _hover={{ bg: "none" }}
+          borderRadius="50%"
           icon={<BsSun />}
+          fontSize="28px"
           onClick={toggleColorMode}
         />
       ) : (
         <IconButton
           aria-label="light"
           bg="transparent"
+          _hover={{ bg: "none" }}
+          borderRadius="50%"
           icon={<BsMoon />}
+          fontSize="28px"
           onClick={toggleColorMode}
-          fontSize="20px"
         />
       )}
     </Box>
