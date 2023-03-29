@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, HStack, Image, Text } from "@chakra-ui/react";
+import { Heading, HStack } from "@chakra-ui/react";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
